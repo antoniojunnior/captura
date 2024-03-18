@@ -221,7 +221,7 @@ h1, h2, h3, h4{
 /* Header */
 .l-nav-top{
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: space-around;
     position: fixed;
     top: 0;
