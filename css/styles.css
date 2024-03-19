@@ -249,7 +249,7 @@ h1, h2, h3, h4{
 .wrapper-footer{
     width: 100vw;
     max-width: 1440px;
-    padding: 2rem;    
+    padding: 1.4rem;    
     display: flex;
     align-items: center;
     justify-content: space-between;
