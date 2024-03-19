@@ -38,6 +38,7 @@ h1, h2, h3, h4{
 
 .logo-img{
     width: 15.625rem;
+    margin-top: 0.5rem;
     margin-left: 1rem;
     cursor: pointer;
 
@@ -66,7 +67,7 @@ h1, h2, h3, h4{
     justify-content: center;
     z-index: 3;
 
-    @media screen and (max-width: 760px){
+    @media screen and (max-width: 1024px){
         height: 100%;
     }
 
@@ -91,13 +92,13 @@ h1, h2, h3, h4{
     width: 100%;
     background-color: transparent;
     color: var(--gray-dark);
-    padding: 2rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
     @media screen and (max-width: 1015px){
-        gap: 1.25rem;
+        gap: 1.15rem;
     }
 }
 
@@ -198,7 +199,7 @@ h1, h2, h3, h4{
 .col-2 {
     width: 100%;
     position: relative;
-    padding: 2rem;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -238,7 +239,7 @@ h1, h2, h3, h4{
 }
 
 .l-footer{
-    height: 20vh;
+    min-height: 20vh;
     background-color: var(--gray-dark);
     color: var(--gray-light);
     display: flex;
@@ -249,19 +250,10 @@ h1, h2, h3, h4{
 .wrapper-footer{
     width: 100vw;
     max-width: 1440px;
-    padding: 1.4rem;    
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
-    @media screen and (max-width: 1015px){
-        padding: 1rem;
-    }
-
-    @media screen and (max-width: 375px){
-        padding: 0.5rem;
-    }
-
+    justify-content: space-around;
+    padding: 0.5rem;
 }
 
 .company-name{
@@ -309,7 +301,8 @@ h1, h2, h3, h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
+    justify-content: center;
+    gap: 0.6rem;
 }
 
 .footer-links{
@@ -332,7 +325,6 @@ h1, h2, h3, h4{
     display: flex;
     gap: 1rem;
     font-size: 2rem;
-    margin-bottom: 0.5rem;
 
     @media screen and (max-width: 425px){
         font-size: 1.25rem;
