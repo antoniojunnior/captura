@@ -11,119 +11,71 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="l-nav-top">
-            <div class="c-logo">
-                <img src="imagens/logo-nav.webp" alt="Logo Futuro.one" class="c-logo__img">
-            </div>
-        </nav>
+    <header class="l-header">
+        <div class="wrapper-header">
+            <img src="imagens/logo.webp" alt="Logo da Futuro.one" class="logo-img"/>
+            <p class="logo-sub">Empreendedorismo Digital <br/> para Adolescentes e Jovens</p>
+        </div>        
     </header>
-    <main>
-        <section class="l-hero">
-            <div class="c-hero">
-                <h1 class="c-hero__title">Não espere a oportunidade.</h1>
-                <h1 class="c-hero__title u-bold u-purple">Crie-a agora.</h1>
-                <h2 class="c-hero__sub-title">Auxiliamos Adolescentes e Jovens a se <br>transformarem em Desenvolvedores de Apps e Empreendedores Digitais de sucesso.</h2>
-                <div class="c-links">
-                    <ul class="c-links__list">
-                        <li class="c-links__item u-btn-cta u-bold u-btn--bigger">Eu QUERO</li>
+    <main class="l-main">
+        <div class="wrapper-main">
+            <div class="col-1">
+                <h1 class="headline">Prepare seu filho para o <br/><span>Futuro Digital</span></h1>
+                <h2 class="subheadline">Auxiliamos seu filho a ressignificar a relação com a tecnologia e se transformar em um Empreendedor Digital de sucesso.</h2>
+                <div class="reserve">
+                    <p class="reserve-title">Reserve uma vaga na próxima turma</p>
+                    <form class="reserve-form">
+                        <input class="reserve-input" type="text" name="name" placeholder="Nome">
+                        <input class="reserve-input" type="text" name="email" placeholder="Email">
+                        <input class="reserve-input" type="text" name="whatsapp" placeholder="WhatsApp">
+                        <input class="reserve-btn" type="button" name="reservar" value="garantir vaga agora">
+                    </form>
+                    <p class="reserve-alert">De acordo com as Leis 12.965/2014 e 13.709/2018, que regulam o uso da Internet e o tratamento de dados pessoais no Brasil, autorizo Futuro.one a enviar notificações por e-mail ou outros meios e concordo com sua Política de Privacidade.</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <h2 class="content-title">O que você irá receber:</h2>
+                <div id="content-list">
+                    <ul class="content-list__ul">
+                        <li class="content-list__item">Teoria e Prática em Ideação e Modelagem de Problemas com <i>Design Thinking</i></li>
+                        <li class="content-list__item">Teoria e Prática em Análise de Experiência do Usuário (UX) e Acessibilidade</li>
+                        <li class="content-list__item">Teoria e Prática em Desenvolvimento de Web com as principais tecnologias do mercado</li>
+                        <li class="content-list__item">Conteúdos transversais, como: Educação Financeira, Marketing e Vendas, Gestão do Tempo, Orientação Profissional e Saúde do Corpo e Mente</li>
+                        <li class="content-list__item">Método basedo no desenvolvimeto das 15 habilidades identificadas pelo Fórum Econômico Mundial</li>
+                        <li class="content-list__item">Acompanhamento em Grupo para aperfeiçoamento de proposta de negócio e revisão de produto</li>
+                        <li class="content-list__item">Grupo de apoio a estudantes para dúvidas e suporte</li>
+                        <li class="content-list__item">Grupo de apoio a pais, mães e responsáveis</li>
+                        <li class="content-list__item">Mentorias Ao Vivo</li>
+                        <li class="content-list__item">Aulas Gravadas e Ao Vivo</li>
+                        <li class="content-list__item">Certificado de Conclusão</li>
+                        <li class="content-list__item">Acesso por 12 meses</li>
+                        <li class="content-list__item">Garantia de 7 dias</li>
                     </ul>
                 </div>
-                <div class="c-sell-reserve">
-                    <h2 class="c-sell__sub-title u-txt-center">Garanta já sua vaga!</h2>
-                    <form method="post" action="/reservar" class="c-sell__form">
-                        <input type="text" name="nome" placeholder="Nome">
-                        <input type="text" name="email" placeholder="E-mail">
-                        <input type="text" name="telefone" placeholder="Telefone">
-                        <input type="submit" value="RESERVAR VAGA" class="u-btn-sell">
-                    </form>
-                </div> 
-            </div>
-        </section>
-        <section class="l-info u-bg-blue-light">
-            <div class="c-info u-width-80">
-                <h1 class="c-info__title">Pequenos negócios.<br><span class="u-bold u-purple">Lucro recorrente.</span></h1>                
-                <h2 class="c-info__sub-title">Aprenda a criar seu negócio digital com base em um modelo que fatura mais de R$ 36 bilhões anualmente.</h2>
-            </div>
-        </section>
-        <section class="l-info">
-            <div class="c-info u-width-80">
-                <h1 class="c-info__title u-txt-right">Problemas comuns.<br><span class="u-bold u-purple">Produtos escaláveis.</span></h1>
-                <h2 class="c-info__sub-title u-txt-right">Aprenda a identificar problemas vivenciados por muitas pessoas e a desenvolver soluções eficientes que atendam às necessidades dos clientes.</h2>
-            </div>
-        </section>
-        <section class="l-info u-bg-purple-light">
-            <div class="c-info u-width-80">
-                <h1 class="c-info__title">Habilidades para <span class="u-bold u-purple">Seu Futuro</span>.</h1>                
-                <h2 class="c-info__sub-title">Mais que tecnologia e negócios. Estamos compromissados em oferecer uma formação para a vida. Pensando nisso, abordaremos temas variados que irão auxiliar na autodescoberta e orientação para o futuro profissional.</h2>
-            </div>
-        </section>
-        <section class="l-info">
-            <div class="c-info u-width-100">
-                <h1 class="c-info__title u-txt-center">O que irá aprender...</h1>
-                <div class="c-info__cards-tec">
-                    <div class="c-info__card-tec-item">
-                        <img src="imagens/section-07-img-01.webp" alt="Logotipo ilustrativo sobre Design Thinking" class="c-info__card-tec-img">
-                        <h2 class="c-info__card-tec-title">Design Thinking</h2>
-                    </div>
-                    <div class="c-info__card-tec-item">
-                        <img src="imagens/section-07-img-02.webp" alt="Logotipo ilustrativo sobre User Experience (UX)" class="c-info__card-tec-img">
-                        <h2 class="c-info__card-tec-title">UX (User Experience)</h2>
-                    </div>
-                    <div class="c-info__card-tec-item">
-                        <img src="imagens/section-07-img-03.webp" alt="Logotipo ilustrativo sobre HTML5" class="c-info__card-tec-img">
-                        <h2 class="c-info__card-tec-title">HTML 5</h2>
-                    </div>
-                    <div class="c-info__card-tec-item">
-                        <img src="imagens/section-07-img-04.webp" alt="Logotipo ilustrativo sobre CSS3" class="c-info__card-tec-img">
-                        <h2 class="c-info__card-tec-title">CSS 3</h2>
-                    </div>
-                    <div class="c-info__card-tec-item">
-                        <img src="imagens/section-07-img-05.webp" alt="Logotipo ilustrativo sobre JavaScript" class="c-info__card-tec-img">
-                        <h2 class="c-info__card-tec-title">JavaScript</h2>
-                    </div>
-                </div>
-            </div>
-        </section>        
-        <section class="l-info u-bg-gray-middle">
-            <div>
-                <div class="slideshow-container">
-                    <div class="slideshow-images" id="slideshow">
-                      <img src="imagens/slideshow-img-01.webp" class="slide active">
-                      <img src="imagens/slideshow-img-02.webp" class="slide">
-                      <img src="imagens/slideshow-img-03.webp" class="slide">
-                      <img src="imagens/slideshow-img-04.webp" class="slide">
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <div class="slide-indicators" id="slide-indicators"></div>
-            </div> 
-        </section>
-    </main>
-    <footer class="l-footer u-bg-gray-dark">
-        <div class="c-footer u-width-80">
-            <div class="c-footer_row-01 u-width-100">
-                <div class="c-company-info">
-                    <h3 class="c-company-info__title">Futuro.one</h3>
-                    <p class="c-company-info__text">49.206.960/0001-00</p>
-                </div>
-                <div>
-                    <div class="c-company-info__text"><i class="fa-regular fa-envelope fa-lg"></i> <span>suporte@futuro.one</span></div>
-                    <div class="c-company-info__text"><i class="fa-solid fa-map fa-lg"></i></i> <span>Avenida Paulista, 1106, 16º andar, CEP 01310-914, São Paulo - SP</span></div>
-                </div>
-            </div>
-            <div class="c-footer_social u-width-100 u-txt-right">
-                <a class="c-footer_social_link" href="https://www.instagram.com/futuro.one.oficial/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-                <a class="c-footer_social_link" href="https://www.facebook.com/futuro.one/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
-                <a class="c-footer_social_link" href="#"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-            </div>
-            <div class="u-width-100 u-txt-center">
-                <p class="c-company-info__text">2024 @ Todos os Direitos Reservados para Futuro.one.</p>
             </div>
         </div>
+    </main>
+    <footer class="l-footer">
+        <div class="wrapper-footer">
+            <div class="footer-col-1">
+                <p class="company-name">Futuro.one</p>
+                <p class="company-subheadline">Empreendedorismo Digital para Adolescentes e Jovens</p>
+                <p class="company-cnpj">49.206.960/0001-00</p>
+                <p class="company-address"><i class="fa-regular fa-envelope"></i>suporte@futuro.one</p>
+                <p class="company-address"><i class="fa-solid fa-location-dot"></i>Avenida Paulista, 1106, 16º andar, CEP 01310-914, Bela Vista, São Paulo - SP</p>
+            </div>
+            <div class="footer-col-2">
+                <div class="company-social">
+                    <a class="social-links" href="https://www.instagram.com/futuro.one.oficial/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="social-links" href="https://www.facebook.com/futuro.one/"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="social-links" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="#" class="footer-links">Termos de uso</a>
+                <a href="#" class="footer-links">Política de Privacidade</a>
+                <a href="#" class="footer-links">Contato</a>
+            </div>
+            
+        </div>        
     </footer>
-    <script src="js/index.js"></script>
-    <script src="js/slideshow.js"></script>
 </body>
 </html>
