@@ -1,18 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link href="css/fonts.css" rel="stylesheet">
+    <style>
+          /* latin */
+        @font-face {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        html{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .l-main{
+            height: 100%;
+            background-color: var(--gray-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+
+            @media screen and (min-width: 768px){
+                min-height: 70vh;
+            }
+
+        }
+
+        .wrapper-main{
+            width: 100vw;
+            max-width: 1440px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 0;
+
+            @media screen and (min-width: 768px){
+                flex-direction: row;
+                gap: 2rem;
+            }
+        }
+
+        .col-1{
+            width: 100%;
+            background-color: transparent;
+            color: var(--gray-dark);
+            padding: 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            @media screen and (min-width: 1024px){
+                gap: 1rem;
+            }
+        }
+
+        .subheadline{
+            font-size: 0.9rem;
+            text-wrap: pretty;
+
+            @media screen and (min-width: 1024px){
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/338147c8f5.js" crossorigin="anonymous"></script>
+    <script async src="https://kit.fontawesome.com/338147c8f5.js" crossorigin="anonymous"></script>
     <title>Faça Seu Futuro | Futuro.one</title>
-    <link href="css/styles.css" rel="stylesheet">
+    <meta name="description" content="Página de Reserva de Vagas na próxima turma da Futuro.one">
+    
+    <link href="css/styles.css" rel="stylesheet"> 
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NHVXBH8LCG"></script>
-    <script>
+    <script defer src="js/gtm.js?id=G-NHVXBH8LCG"></script>
+    <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -21,7 +92,7 @@
     </script>
 
     <!-- Meta Pixel Code -->
-    <script>
+    <script defer>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -29,7 +100,7 @@
         n.queue=[];t=b.createElement(e);t.async=!0;
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        'js/fbevents.js');
         fbq('init', '1188685749204921');
         fbq('track', 'PageView');
     </script>
@@ -44,7 +115,7 @@
 <body>
     <header class="l-header">
         <div class="wrapper-header">
-            <img src="imagens/logo.webp" alt="Logo da Futuro.one" class="logo-img"/>
+            <img src="imagens/logo.webp" width="340" height="70" alt="Logo da Futuro.one" class="logo-img"/>
             <p class="logo-sub">Empreendedorismo Digital <br/> para Adolescentes e Jovens</p>
         </div>        
     </header>
@@ -97,9 +168,9 @@
             </div>
             <div class="footer-col-2">
                 <div class="company-social">
-                    <a class="social-links" href="https://www.instagram.com/futuro.one.oficial/"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="social-links" href="https://www.facebook.com/futuro.one/"><i class="fa-brands fa-facebook"></i></a>
-                    <a class="social-links" href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="social-links" href="https://www.instagram.com/futuro.one.oficial/" aria-label="acesse o nosso perfil no instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="social-links" href="https://www.facebook.com/futuro.one/" aria-label="acesse o nosso perfil no facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="social-links" href="#" aria-label="fale conosco atraves do whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
                 <a href="#" class="footer-links">Termos de uso</a>
                 <a href="#" class="footer-links">Política de Privacidade</a>
