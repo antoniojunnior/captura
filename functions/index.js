@@ -31,6 +31,7 @@ const { getFirestore, Timestamp, FieldValue, Filter } = require('firebase-admin/
 const admin = initializeApp();
 
 const db = getFirestore();
+db.settings({ignoreUndefinedProperties: true});
 
 const app = express();
 
@@ -53,15 +54,15 @@ app.post('/reservar', async (req, res) => {
         month: '2-digit',day: '2-digit',year: 'numeric'});
 
     const add = await db.collection('reservas').add({
-        nome: req.body.nome,
+        name: req.body.name,
         email: req.body.email,
-        telefone: req.body.telefone,
-        data: date,
+        whatsapp: req.body.whatsapp,
+        date: date,
         to: req.body.email,
         template: {
             name: "reservar-vaga",
             data: {
-                nome: req.body.nome
+                name: req.body.name
             },
         },
     });

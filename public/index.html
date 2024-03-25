@@ -126,11 +126,11 @@
                 <h2 class="subheadline">Auxiliamos seu filho a ressignificar a relação com a tecnologia e se transformar em um Empreendedor Digital de sucesso.</h2>
                 <div class="reserve">
                     <p class="reserve-title">Reserve uma vaga na próxima turma</p>
-                    <form class="reserve-form" method="post" action="/reservar">
-                        <input class="reserve-input" type="text" name="nome" placeholder="Nome">
-                        <input class="reserve-input" type="text" name="email" placeholder="Email">
-                        <input class="reserve-input" type="text" name="telefone" placeholder="WhatsApp">
-                        <button class="reserve-btn" type="submit" name="reservar">garantir vaga agora</button>
+                    <form class="reserve-form" id="reserve-form">
+                        <input class="reserve-input" type="text" name="name" id="name" placeholder="Nome" required>
+                        <input class="reserve-input" type="email" name="email" id="email" placeholder="Email" required>
+                        <input class="reserve-input" type="text" name="whatsapp" id="whatsapp" placeholder="WhatsApp" required>
+                        <input class="reserve-btn" type="submit" id="reservar" value="garantir vaga agora"/>
                     </form>
                     <p class="reserve-alert">De acordo com as Leis 12.965/2014 e 13.709/2018, que regulam o uso da Internet e o tratamento de dados pessoais no Brasil, autorizo Futuro.one a enviar notificações por e-mail ou outros meios e concordo com sua Política de Privacidade.</p>
                 </div>
@@ -172,12 +172,13 @@
                     <a class="social-links" href="https://www.facebook.com/futuro.one/" aria-label="acesse o nosso perfil no facebook"><i class="fa-brands fa-facebook"></i></a>
                     <a class="social-links" href="#" aria-label="fale conosco atraves do whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
-                <a href="#" class="footer-links">Termos de uso</a>
-                <a href="#" class="footer-links">Política de Privacidade</a>
+                <a href="termosdeuso.html" class="footer-links">Termos de uso</a>
+                <a href="politicaprivacidade.html" class="footer-links">Política de Privacidade</a>
                 <a href="#" class="footer-links">Contato</a>
             </div>
             
         </div>        
     </footer>
+    <script src="js/validate.js" type="text/javascript"></script>
 </body>
 </html>
